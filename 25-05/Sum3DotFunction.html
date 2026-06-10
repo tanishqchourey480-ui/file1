@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>//3-Dot function
+            function sumFun(...a){
+                var i,sum=0;
+                for(i=0;i<a.length;i++){
+                    document.write(a[i]+" ");
+                    sum+=a[i];
+                }
+                document.write("<br>Sum is "+sum);
+                console.log(sum);
+            }
+            function mainFun(){
+                document.write("Function Call with one argument:");
+                sumFun(10);
+                document.write("<br><br>Function Call with two arguments:");
+                sumFun(10,20);
+                document.write("<br><br>Function Call with three arguments:");
+                sumFun(10,20,30);
+            }
+        </script>
+    </head>
+    <body>
+        <p><button type="submit" onclick="mainFun()">Sum</button></p>
+    </body>
+</html>

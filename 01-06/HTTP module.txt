@@ -1,0 +1,6 @@
+HTTP module provides objects & functions to create server & define backend/server-side programming.
+1. createServer(): used to define web server
+2. listen(): used to manage request & response
+3. PORT: it is logical address of execution environment of web app
+4. write(): function used to send/write response from server-side to client side. Used to display output by printing it in browser
+5. end(): used to end the response

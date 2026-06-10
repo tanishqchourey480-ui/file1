@@ -1,0 +1,10 @@
+alert(): displays an alert box with a specified message and an OK button.
+console.log(): outputs a message to web console. Useful for debugging.
+parseInt(): converts string/float value to integer.
+parseFloat(): converts string/integer value to float.
+isNaN(): checks if value is Not-a-Number.
+Math.random(): Generates a random number between 0 & 1.
+Math.floor(): rounds number down to nearest integer.
+Math.ceil(): rounds number up to nearest integer.
+Math.round(): rounds number to nearest integer.
+Date(): creates a new date object representing current date and time.

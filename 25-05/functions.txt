@@ -1,0 +1,33 @@
+Arrow functions: AKA anonymous func, executed by reference. Faster processing & timesaving. Reference variable holds address of function.
+Definition Syntax:
+reference_variable_name = (arguments_name) =>
+{
+---
+---
+---
+}
+
+Call syntax:
+reference_variable_name();
+
+-x-x-x-x-x-
+
+Default argument functions: if argument value is not given by user, function uses predefined default value.
+Syntax:
+function function_name (variable_1_name = value, variable_2_name = value, ..., variable_N_name = value )
+{
+---
+---
+---
+}
+
+-x-x-x-x-x-
+
+3 Dot function: allows n-number of arguments rather than a predefined amount.
+Syntax:
+function function_name(...argument_name)
+{
+---
+---
+---
+}

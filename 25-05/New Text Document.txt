@@ -1,0 +1,7 @@
+Check prime/not prime type 2
+print table of given num type 2
+print fibonacci series type 1
+sum of digits of any num type 3
+reverse of any num type 4
+checkarmstrong 3
+check palindrome 2 

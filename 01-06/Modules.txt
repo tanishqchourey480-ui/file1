@@ -1,0 +1,24 @@
+Module is a collection of user-defined functions. Saves time, reduces code size with reused code, allows global use, and helps in code-hiding/abstraction
+Syntax:
+var module_name = {
+    function_1_name: function(arguments){
+            statements;
+            ---
+            ---
+    },
+    function_2_name: function(arguments){
+            statements;
+            ---
+            ---
+    },
+    function_3_name: function(arguments){
+            statements;
+            ---
+            ---
+    },
+    ---
+    ---
+} module.exports=module_name;
+
+To include a module in a different program:
+var object_name = require("./module_file_name");

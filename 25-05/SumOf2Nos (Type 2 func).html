@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>//Type 2 Function: argument, no return
+            function sumFun(a,b){
+                var c;
+                c=a+b;
+                alert("Sum of "+a+" and "+b+" = "+c);
+            }
+            function mainFun(){
+                var a,b;
+                a=parseInt(prompt("Enter value of 1st number"));
+                b=parseInt(prompt("Enter value of 2nd number"));
+                sumFun(a,b);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Addition of two numbers</h1>
+        <p><button type="submit" onclick="mainFun()">Add</button></p>
+    </body>
+</html>

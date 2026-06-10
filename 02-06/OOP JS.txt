@@ -1,0 +1,40 @@
+Object-Oriented Programming in JS:
+OOP is class-object based programming. Its principles are:
+1. Class & Object 2. Data Encapsulation 3. Data Hiding 4. Data Abstraction 5. Inheritance 6. Polymorphism 7. Message Passing
+
+
+Object- Object is an instance of a class, used to access members of that class and allocate memory to them.
+SYNTAX: var OBJECT_NAME= new CLASS_NAME();
+
+Class- a Class is a collection of Objects, or a collection of variables (called data members or instance variables) and functions (called methods or member functions)
+SYNTAX:
+class CLASS_NAME{
+    //define data members
+    constructor(){ //inbuilt function used to define members of class
+        this.VARIABLE_NAME;
+        ---
+        ---
+    }
+    //define methods
+    FUNCTION_NAME(){
+        ---
+        ---
+    }
+}
+
+Constructor: special member function of class, used to define & initialize data members of Class. It is auto-executed when an Object is created for a Class.
+In JS, a Class can only have one Constructor defined. There are 2 types of constructor:
+1. Default/Zero-Argument Constructor- used to set common/default value to all variables in all Objects of a class.
+SYNTAX:
+constructor(){
+	this.VARIABLE_NAME=INITIAL_VALUE;
+	---
+	---
+}
+2. Parameterized/With-Argument Constructor- used to initialize differnt objects with different values.
+SYNTAX:
+constructor(PARAMETER_1_NAME, PARAMETER_2_NAME, ...){
+	this.VARIABLE_NAME=PARAMETER_NAME;
+	---
+	---
+}

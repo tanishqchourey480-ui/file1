@@ -1,0 +1,15 @@
+FileSystem Module has predefined functions to read & write data to/from files. It provides file management in permanent storage.
+1. writeFile()- used to write data to file
+Syntax:
+fs_objectname.writeFile("file_name",data_or_variable_name,()=>{
+   statements;
+   ---
+   ---
+});
+2. readFile()- used to read data from file
+Syntax:
+fs_objectname.readFile("file_name","utf-8",(err,data)=>{
+   statements;
+   ---
+   ---
+});

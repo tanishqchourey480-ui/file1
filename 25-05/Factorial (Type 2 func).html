@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>//Type 2 Function: argument, no return
+            function factFun(b){
+                var a=1;
+                for(b;b>0;b--){
+                    a*=b;
+                }
+                alert("Factorial = "+a);
+            }
+            function mainFun(){
+                var b;
+                b=parseInt(prompt("Enter number"));
+                factFun(b);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Factorial of Given Number</h1>
+        <p><button type="submit" onclick="mainFun()">Factorial</button></p>
+    </body>
+</html>

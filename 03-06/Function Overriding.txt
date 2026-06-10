@@ -1,0 +1,17 @@
+Function Overriding is defining a function with same name and parameters in both base and derive class with same signature/prototype.
+SYNTAX:
+class BASE_CLASS_NAME{
+	---
+	---
+	---
+	}
+class DERIVED_CLASS_NAME extends BASE_CLASS_NAME{
+	//define same-name function as base class' function here
+	FUNCTION_NAME(){
+		super.FUNCTION_NAME()//super keyword is used to call base class function from derived class
+		---
+		---
+		}
+	---
+	---
+	}

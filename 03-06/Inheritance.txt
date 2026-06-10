@@ -1,0 +1,91 @@
+Inheritance: To create a new class (called derived/child class) from existing class (called base/parent class). It provides Code Reusability, Time Saving, Reduced Code Size, Performance Management, Memory Management.
+JS supports 3 types of inheritance:
+1. Single Inheritance- to create 1 derived class from 1 base class
+DIAGRAM:
+	Class 1 (BASE)
+	      |
+	      V
+	Class 2 (DERIVED)
+SYNTAX:
+	class CLASS_1_NAME {
+		---
+		---
+		---
+		}
+	class CLASS_2_NAME extends CLASS_1_NAME {
+		---
+		---
+		---
+		}//Object derived from Class 2 can access properties of Class 1 as well
+2. Multilevel Inheritance- to create a derived class using a derived class from a first base class as the second base class
+DIAGRAM:
+	Class 1 (1st BASE)
+	      |
+	      V
+	Class 2 (1st DERIVED/2nd BASE)
+	      |
+	      V
+	Class 3 (2nd DERIVED)
+SYNTAX:
+	class CLASS_1_NAME {
+		---
+		---
+		---
+		}
+	class CLASS_2_NAME extends CLASS_1_NAME {
+		---
+		---
+		---
+		}
+	class CLASS_3_NAME extends CLASS_2_NAME {
+		---
+		---
+		---
+		}//Object derived from Class 3 can access properties of Class 1,2,3
+3. Hierarchial Inheritance- To create multiple derived classes from 1 base class, and potentially multiple derived classes from those derived classes too
+DIAGRAM:
+					    Class 1 (BASE)
+			  ________________________|________________________
+		      	  |						  |
+		      	  V						  V
+		    Class 2 (DERIVED)				    Class 3 (DERIVED)
+	      ____________|____________			      ____________|____________
+	      |			      |			      |			      |
+	      V			      V			      V			      V
+	Class 4 (DERIVED)	Class 5 (DERIVED)	Class 6 (DERIVED)	Class 7 (DERIVED)
+SYNTAX:
+	class CLASS_1_NAME {
+		---
+		---
+		---
+		}
+	class CLASS_2_NAME extends CLASS_1_NAME {
+		---
+		---
+		---
+		}
+	class CLASS_3_NAME extends CLASS_1_NAME {
+		---
+		---
+		---
+		}
+	class CLASS_4_NAME extends CLASS_2_NAME {
+		---
+		---
+		---
+		}//Object of Class 4 can access properties of Class 1,2,4
+	class CLASS_5_NAME extends CLASS_2_NAME {
+		---
+		---
+		---
+		}//Object of Class 4 can access properties of Class 1,2,5
+	class CLASS_6_NAME extends CLASS_3_NAME {
+		---
+		---
+		---
+		}//Object of Class 4 can access properties of Class 1,3,6
+	class CLASS_7_NAME extends CLASS_3_NAME {
+		---
+		---
+		---
+		}//Object of Class 4 can access properties of Class 1,3,7
