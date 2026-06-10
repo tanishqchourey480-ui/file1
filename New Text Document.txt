@@ -1,0 +1,22 @@
+A database is a of data and functions executed on that data.
+DBMS is a system/software that can be used to manage the data and schema.
+A table/collection is a form of data storage than keeps information as rows/columns.
+
+MySQL- structured query language-based DBMS by Oracle, uses schema & predefined queries/structure to manipulate data.
+MongoDB- document-based DBMS, manages data & documents in the Binary Script Object Notation (BSON) format, which manages data in a compressed format.
+MongoDB is a no-sql database, it does not depend on predefined queries/schema to manipulate data, and can be adjusted per requirements.
+
+MongoDB (Database Layer):
+>Developed by MongoDB INC. (originally 10gen), initial release- 2009
+>NoSQL database, Schema-free/flexible schema design, highly scalable
+>Document-based database storing data in JSON-like format (BSON)
+
+
+INSTALL:
+1. MongoDB community edition
+2. MongoDB shell
+3. MongoDB command line tools
+open cmd and run following commands:
+>mongosh	//opens command prompt of mongodb, mongodb commands can be run from there
+
+MONGODB COMMANDS:
