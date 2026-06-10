@@ -1,0 +1,24 @@
+Asynchronous JavaScript And XML
+WebDev technique that allows web-pages to communicate with a server and dynamically alter page elements without reloading whole page.
+Traditionally:
+1. User sends request (like sumbitting a form)
+2. Whole page reloads
+3. Server sends new page as response
+In AJAX:
+1. Page does not reload
+2. Request sent in background
+3. Specific relevant parts of page updated
+
+AJAX lifecycle:
+User action
+Create request
+Send request
+Server processing
+Server responce
+Handle response
+Update DOM
+
+XMLHTTPRequest()
+open()
+send()
+onreadystatechange

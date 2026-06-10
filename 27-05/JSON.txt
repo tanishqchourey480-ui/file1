@@ -1,0 +1,5 @@
+JSON (Java Script Object Notation)- Used to transport data over internet. Compact, easy to read and secure. JS has inbuilt methods to convert JSON into JS objects and vice versa:
+json.parse()- converts JSON string to JS object
+json.stringify()- converts JS object to JSON string
+syntax for json object:
+jsonStringName = '{"key_1_name":numeric_value, "key_2_name":"string_value", ...}'

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>setInterval() Function Demo</h1>
+        <p><button type="submit" onclick="startInterval()">Start Interval</button></p>
+        <p><button type="submit" onclick="stopInterval()">Stop Interval</button></p>
+        <p id="demo1"></p>
+        <p id="demo"></p>
+        <script>
+            let intervalId;
+            function startInterval(){
+                document.getElementById("demo1").innerHTML=new Date().toLocaleTimeString();
+                intervalId=setInterval(function (){document.getElementById("demo").innerHTML=new Date().toLocaleTimeString();
+                },1000);
+            }
+            function stopInterval(){
+                clearInterval(intervalId);
+            }
+        </script>
+    </body>
+</html>

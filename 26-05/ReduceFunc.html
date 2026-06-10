@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function showFun1(){
+                var a=[500,100,50,5,8,6];
+                document.write("Reduce Function Result: "+a.reduce(mainFun1));
+                }
+            function mainFun1(total,num){
+                return total-num;
+            }
+            function showFun2(){
+                var a=[500,100,50,5,8,6];
+                document.write("<br>Reduce Function Result: "+a.reduce(mainFun2));
+                }
+            function mainFun2(total,num){
+                return total+num;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Reduce() Function Demo</h1>
+        <p><button type="submit" onclick="showFun1()">Reduce-</button></p>
+        <p><button type="submit" onclick="showFun2()">Reduce+</button></p>
+    </body>
+</html>

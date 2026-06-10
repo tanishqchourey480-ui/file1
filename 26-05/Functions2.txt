@@ -1,0 +1,6 @@
+filter(): returns all values of element from array that passes a given test condition. Syntax- array_name.filter(condition)
+find(): Returns a single value, the first array element that passes a given test condition. Syntax- array_name.find(condition)
+map(): auto-manages index and loop to retrieve data from array. Syntax- array_name.map(optional_condition). Without condition, returns all array elements.
+reduce(): 
+setTimeout(): calls a function or evaluates an expression after a set number of milliseconds pass. Syntax- setTimeout(function, milliseconds)
+setInterval(): calls a function or evaluates an expression repeatedly after set interval of milliseconds. Continues until clearInterval() is called or the window closes. Syntax- setInterval(function, milliseconds)

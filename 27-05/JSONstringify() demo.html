@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function jsonStringifyFun(){
+                let jsObj={"ID":101,"Name":"Amit Jain","Age":30,"City":"Indore"};
+                let jsonString=JSON.stringify(jsObj);
+                document.write(jsonString);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>JSON.stringify() demo</h1>
+        <p><button type="submit" onclick="jsonStringifyFun()">click</button></p>
+    </body>
+</html>

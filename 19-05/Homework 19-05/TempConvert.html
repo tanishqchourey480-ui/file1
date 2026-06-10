@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function celsTempFun(){
+                var a,b;
+                a=parseInt(document.getElementById("tb1").value);
+                b=(a-32)*5/9;
+                document.getElementById("tb2").value=b;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Fahrenheit to Celsius</h1>
+        <p>Enter temperature in Fahrenheit <input type="text", id="tb1"></p>
+        <p>Celsius Temperature <input type="text", id="tb2"></p>
+        <p><button type="submit" onclick="celsTempFun()">Calculate</button></p>
+    </body>
+</html>

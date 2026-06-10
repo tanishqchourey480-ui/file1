@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function comp3Fun(){
+                var a,b,c;
+                a=parseInt(document.getElementById("tb1").value);
+                b=parseInt(document.getElementById("tb2").value);
+                c=parseInt(document.getElementById("tb3").value);
+                if(a>b && a>c){
+                    document.getElementById("tb4").value="First number is greatest.";
+                }
+                if(b>a && b>c){
+                    document.getElementById("tb4").value="Second number is greatest.";
+                }
+                if(c>a && c>b){
+                    document.getElementById("tb4").value="Third number is greatest.";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Greatest of three numbers</h1>
+        <p>Enter first number <input type="text", id="tb1"></p>
+        <p>Enter second number <input type="text", id="tb2"></p>
+        <p>Enter third number <input type="text", id="tb3"></p>
+        <p>Result <input type="text", id="tb4"></p>
+        <p><button type="submit" onclick="comp3Fun()">COMPARE</button></p>
+    </body>
+</html>

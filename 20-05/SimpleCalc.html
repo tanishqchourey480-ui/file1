@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function calcFun(){
+                var num1,num2,result,choice;
+                num1=parseInt(prompt("Enter First Number"));
+                num2=parseInt(prompt("Enter Second Number"));
+                choice=prompt("Enter Choice: + - * /");
+                switch(choice){
+                    case "+":
+                        result=num1+num2;
+                        alert(result);
+                        break;
+                    case "-":
+                        result=num1-num2;
+                        alert(result);
+                        break;
+                    case "*":
+                        result=num1*num2;
+                        alert(result);
+                        break;
+                    case "/":
+                        result=num1/num2;
+                        alert(result);
+                        break;
+                    default:
+                        alert("Invalid Operation Input");
+                        break;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <button type="submit" onclick="calcFun()">Calculate</button></p>
+    </body>
+</html>

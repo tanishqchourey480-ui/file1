@@ -1,0 +1,5 @@
+Q1 Reverse of any number
+Q2 Check Prime or Non-prime number
+Q3 Check palindrome of given n-digit number
+Q4 Read n & p from user & calc n^p without using power function
+Q5 Print fibonacci series up to 34

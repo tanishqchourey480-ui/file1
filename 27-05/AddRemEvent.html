@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <button id="myButt">Click</button>
+        <button id="addButt">Add Event</button>
+        <button id="remButt">Remove Event</button>
+        <script>
+            function buttFun(){
+                alert("Button Clicked!");
+            }
+            document.getElementById("addButt").addEventListener("click",function(){
+                document.getElementById("myButt").addEventListener("click",buttFun);
+                alert("Event Added");
+            });
+            document.getElementById("remButt").addEventListener("click",function(){
+                document.getElementById("myButt").removeEventListener("click",buttFun);
+                alert("Event Removed");
+            });
+        </script>
+    </body>
+</html>

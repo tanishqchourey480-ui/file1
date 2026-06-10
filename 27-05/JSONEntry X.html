@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function jsonParseFun(){
+                var i,n,a,c;
+                i=parseInt(document.getElementById("tb1").value);
+                n=document.getElementById("tb2").value;
+                a=parseInt(document.getElementById("tb3").value);
+                c=document.getElementById("sel1").value;
+                let jsonString='{"ID":i,"Name":n,"Age":a,"City":c}';
+                let jsObj=JSON.parse(jsonString);
+                document.write("ID: "+jsObj.ID+"<br>Name: "+jsObj.Name+"<br>Age: "+jsObj.Age+"<br>City: "+jsObj.City)
+            }
+        </script>
+    </head>
+    <body>
+        <p><table border="1">
+            <tr>
+                <td>Enter ID</td>
+                <td><input type="text", id="tb1"/></td>
+            </tr>
+            <tr>
+                <td>Enter name</td>
+                <td><input type="text", id="tb2"/></td>
+            </tr>
+            <tr>
+                <td>Enter age</td>
+                <td><input type="number", id="tb3"/></td>
+            </tr>
+            <tr>
+                <td>Select city</td>
+                <td><select id="sel1">
+                    <option value="Indore">Indore</option>
+                    <option value="Bhopal">Bhopal</option>
+                    <option value="Ujjain">Ujjain</option>
+                    </select>
+                </td>
+            </tr>
+        </table></p>
+        <p><button type="submit" onclick="jsonParseFun()">Submit</button></p>
+    </body>
+</html>

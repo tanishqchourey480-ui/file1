@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function formSubmitFun(){
+                let jsObj={
+                roll:parseInt(document.getElementById("tb1").value),
+                name:document.getElementById("tb2").value,
+                gender:parseInt(document.getElementById("rad1").value),
+                branch:document.getElementById("sel1").value,
+                city:document.getElementById("sel2").value,
+                phys:parseInt(document.getElementById("tb3").value),
+                chem:parseInt(document.getElementById("tb4").value),
+                math:parseInt(document.getElementById("tb5").value),
+                total:(parseInt(document.getElementById("tb3").value)+parseInt(document.getElementById("tb4").value)+parseInt(document.getElementById("tb5").value)),
+                percentage:(parseInt(document.getElementById("tb3").value)+parseInt(document.getElementById("tb4").value)+parseInt(document.getElementById("tb5").value))/3
+                };
+                let jsonString=JSON.stringify(jsObj);
+                document.write(jsonString);
+            }
+        </script>
+    </head>
+    <body>
+        <p><table border="1">
+        <tr>
+            <td>Roll Number </td>
+            <td><input type="text", id="tb1"/></td>
+        </tr><tr>
+            <td>Name </td>
+            <td><input type="text", id="tb2"/></td>
+        </tr><tr>
+            <td>Gender </td>
+            <td><input type="radio", id="rad1", value="Male"/>Male <input type="radio", id="rad1", value="Female"/>Female</td>
+        </tr><tr>
+            <td>Branch </td>
+            <td><select id="sel1">
+                <option value="CSIT">CSIT</option>
+                <option value="AIML">AIML</option>
+                <option value="CSITCS">CSITCS</option></select></td>
+        </tr><tr>
+            <td>City </td>
+            <td><select id="sel2">
+                <option value="Indore">Indore</option>
+                <option value="Bhopal">Bhopal</option>
+                <option value="Dewas">Dewas</option></select></td>
+         <tr>
+            <td>Physics Marks</td>
+            <td><input type="text", id="tb3"/></td>
+        </tr><tr> <tr>
+            <td>Chemistry Marks</td>
+            <td><input type="text", id="tb4"/></td>
+        </tr><tr> <tr>
+            <td>Maths Marks</td>
+            <td><input type="text", id="tb5"/></td>
+        </tr>
+        </table></p>
+        <p><button type="submit" onclick="formSubmitFun()">Submit</button></p>
+        <p><button type="submit" onclick="formdisplayFun()">Show all</button></p>
+    </body>
+</html>
+
+<!--Store multiple entries and then show all-->

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function calcGradeFun(){
+                var a,b,c,d,tot,perc,grd;
+                a=parseInt(document.getElementById("tb1").value);
+                b=parseInt(document.getElementById("tb2").value);
+                c=parseInt(document.getElementById("tb3").value);
+                d=parseInt(document.getElementById("tb4").value);
+                tot=a+b+c+d;
+                document.getElementById("tb5").value=tot;
+                perc=tot/4;
+                document.getElementById("tb6").value=perc;
+                if(tot>=350){
+                    document.getElementById("tb7").value="A";
+                }
+                if(tot<350 && tot>=300){
+                    document.getElementById("tb7").value="B";
+                }
+                if(tot<300 && tot>=250){
+                    document.getElementById("tb7").value="C";
+                }
+                if(tot<250 && tot>=200){
+                    document.getElementById("tb7").value="D";
+                }
+                if(tot<200){
+                    document.getElementById("tb7").value="F";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Grade of four Subjects</h1>
+        <p>Enter first subject marks (out of 100) <input type="text", id="tb1"></p>
+        <p>Enter second subject marks (out of 100) <input type="text", id="tb2"></p>
+        <p>Enter third subject marks (out of 100) <input type="text", id="tb3"></p>
+        <p>Enter fourth subject marks (out of 100) <input type="text", id="tb4"></p>
+        <p>Total Marks (out of 400) <input type="text", id="tb5"></p>
+        <p>Percentage <input type="text", id="tb6"></p>
+        <p>Grade <input type="text", id="tb7"></p>
+        <p><button type="submit" onclick="calcGradeFun()">Calculate</button></p>
+    </body>
+</html>

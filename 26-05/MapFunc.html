@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function showFun(){
+                var a=[5,3,8,9,2,6,7,87,32,50];
+                a.map((item)=>{
+                    document.write(item+" ");
+                })
+                document.write("<br>");
+                var objarr=[{bcode:101,bname:"Ek Tha Intern",price:420},{bcode:102,bname:"Kaun Banega Coder",price:100},{bcode:103,bname:"Any Body Can Develop",price:99}];
+                objarr.map((item)=>{
+                    document.write(item.bcode+' '+item.bname+' '+item.price+"<br>");
+                    item.price=500;
+                })
+                document.write("<br>Output after update<br>");
+                objarr.map((item)=>{
+                    document.write(item.bcode+' '+item.bname+' '+item.price+"<br>");
+                })
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Map() Function Demo</h1>
+        <p><button type="submit" onclick="showFun()">show</button></p>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function palindromeCheckFun(){
+                var a,b;
+                a=parseInt(document.getElementById("tb1").value);
+                b=(a%10)*100+((a%100)-(a%10))+((a%1000)-(a%100))/100;
+                if(a==b){
+                    document.getElementById("tb2").value="Number is a palindrome.";
+                }
+                if(a!=b){
+                    document.getElementById("tb2").value="Number is not a palindrome.";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Check Palindrome Number</h1>
+        <p>Enter 3-digit number <input type="text", id="tb1"></p>
+        <p>Result <input type="text", id="tb2"></p>
+        <p><button type="submit" onclick="palindromeCheckFun()">Check Palindrome</button></p>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function primesFun(){
+                var n,a=2,b,c;
+                n=parseInt(document.getElementById("tb1").value);
+                do{
+                    b=1;
+                    c=0;
+                    do{
+                        if(a%b==0){
+                            c=c+1;
+                        }
+                        b++;
+                    }while(b<a)
+                    if(c==1){
+                        document.write(a+"<br>");
+                    }
+                    a++;
+                }while(a<=n);
+                }
+        </script>
+    </head>
+    <body>
+        <h1>Primes up to Given Number</h1>
+        <p>Enter number <input type="text", id="tb1"></p>
+        <p><button type="submit" onclick="primesFun()">Show Primes</button></p>
+    </body>
+</html>

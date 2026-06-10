@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function showPalFun(){
+                var a,b;
+                for(a=101;a<=200;a+=10){
+                    //(a%10==1)?document.write(a+"<br>"):document.write("");
+                    //OR
+                    //b=(a%10)*100+((a%100)-(a%10))+((a%1000)-(a%100))/100
+                    //if(a==b){
+                        document.write(a+"<br>");
+                    //}
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Palindromes between 101 & 200</h1>
+        <p><button type="submit" onclick="showPalFun()">Show</button></p>
+    </body>
+</html>

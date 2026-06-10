@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function factFun(){
+                var num,a=1;
+                num=parseInt(document.getElementById("tb1").value);
+                do{
+                    a*=num;
+                    num--;
+                }while(num>0);
+                document.getElementById("tb2").value=a;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Factorial of Given Number</h1>
+        <p>Enter number <input type="text", id="tb1"></p>
+        <p>Result <input type="text", id="tb2"></p>
+        <p><button type="submit" onclick="factFun()">Factorial</button></p>
+    </body>
+</html>

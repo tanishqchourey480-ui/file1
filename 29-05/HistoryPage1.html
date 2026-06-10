@@ -1,0 +1,19 @@
+<!--History- object that allows going to previously visited pages. history.forward() or history.back()-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>History Object Demo Page 1</title>
+    </head>
+    <body>
+        <h2>This is Page 1</h2>
+        <a href="HistoryPage2.html">Go To Page 2</a><br/><br/>
+        <button onclick="goForward()">Go Forward</button>
+        <script>
+            function goForward(){
+                window.history.forward();//goes to the next page in history list if there is one
+            };
+        </script>
+    </body>
+</html>

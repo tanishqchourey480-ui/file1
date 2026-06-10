@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function swapFun(){
+                var a,b;
+                a=parseInt(document.getElementById("tb1").value);
+                b=parseInt(document.getElementById("tb2").value);
+                //a=a+b;
+                //b=a-b;
+                //a=a-b;
+                //document.getElementById("tb1").value=a;
+                //document.getElementById("tb2").value=b;
+                document.getElementById("tb1").value=b;
+                document.getElementById("tb2").value=a;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Swapping of two numbers</h1>
+        <p>First number <input type="text", id="tb1"> Second number <input type="text", id="tb2"></p>
+        <p><button type="submit" onclick="swapFun()">SWAP</button></p>
+    </body>
+</html>

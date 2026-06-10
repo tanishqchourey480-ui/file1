@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AJAX Example</title>
+    </head>
+    <body>
+        <h2>AJAX Example</h2>
+        <button onclick="loadData()">Show</button>
+        <p id="result"></p>
+        <script>
+            function loadData(){
+                fetch("https://jsonplaceholder.typicode.com/posts/1").then(response => response.json()).then(data => {
+                    document.getElementById("result").innerHTML="User ID: "+data.userId+"<br>ID: "+data.id+"<br>Title: "+data.title+"<br>Body: "+data.body;
+                });//fetch() is inbuilt function used to get data from servers
+            };
+        </script>
+    </body>
+</html>

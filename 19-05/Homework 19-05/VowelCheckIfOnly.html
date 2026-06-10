@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function checkVowelFun(){
+                var a,b;
+                a=document.getElementById("tb1").value;
+                if(a=="a"){
+                    document.getElementById("tb2").value="Alphabet is a vowel.";
+                    b=1;
+                }
+                if(a=="e"){
+                    document.getElementById("tb2").value="Alphabet is a vowel.";
+                    b=1;
+                }
+                if(a=="i"){
+                    document.getElementById("tb2").value="Alphabet is a vowel.";
+                    b=1;
+                }if(a=="o"){
+                    document.getElementById("tb2").value="Alphabet is a vowel.";
+                    b=1;
+                }
+                if(a=="u"){
+                    document.getElementById("tb2").value="Alphabet is a vowel.";
+                    b=1;
+                }
+                if(a=="A"){
+                    document.getElementById("tb2").value="Alphabet is a vowel.";
+                    b=1;
+                }
+                if(a=="E"){
+                    document.getElementById("tb2").value="Alphabet is a vowel.";
+                    b=1;
+                }
+                if(a=="I"){
+                    document.getElementById("tb2").value="Alphabet is a vowel.";
+                    b=1;
+                }
+                if(a=="O"){
+                    document.getElementById("tb2").value="Alphabet is a vowel.";
+                    b=1;
+                }
+                if(a=="U"){
+                    document.getElementById("tb2").value="Alphabet is a vowel.";
+                    b=1;
+                }
+                if(b!=1){
+                    document.getElementById("tb2").value="Alphabet is a consonant.";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Check Armstrong Number</h1>
+        <p>Enter an Alphabet <input type="text", id="tb1"></p>
+        <p>Result <input type="text", id="tb2"></p>
+        <p><button type="submit" onclick="checkVowelFun()">Check</button></p>
+    </body>
+</html>

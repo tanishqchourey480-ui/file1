@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JSON Data from API</title>
+    </head>
+    <body>
+        <div id="myDiv">
+            <h1>Load JSON Data from API using AJAX</h1>
+            <button onclick="loadDoc()">Load Content</button>
+        </div>
+        <script>
+            function loadDoc(){
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function(){
+                    if(this.readyState == 4 && this.status==200){
+                        document.getElementById("myDiv").innerHTML=this.responseText;
+                    }
+                };
+                xhttp.open("GET", "https://jsonplaceholder.typicode.com/todos", true);
+                xhttp.send();
+            };
+        </script>
+    </body>
+</html>

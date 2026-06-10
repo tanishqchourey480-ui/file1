@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function simIntFun(){
+                var a,b,c,d;
+                a=parseInt(document.getElementById("tb1").value);
+                b=parseInt(document.getElementById("tb2").value);
+                c=parseInt(document.getElementById("tb3").value);
+                d=a*b*c/100;
+                document.getElementById("tb4").value=d;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Simple Interest</h1>
+        <p>Enter principal amount <input type="text", id="tb1"></p>
+        <p>Enter interest rate <input type="text", id="tb2"></p>
+        <p>Enter duration <input type="text", id="tb3"></p>
+        <p>Simple Interest <input type="text", id="tb4"></p>
+        <p><button type="submit" onclick="simIntFun()">Calculate</button></p>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function powFun(){
+                var num,pow,n=1;
+                num=parseInt(document.getElementById("tb1").value);
+                pow=parseInt(document.getElementById("tb2").value);
+                do{
+                    n=n*num;
+                    pow--;
+                }while(pow>=1);
+                document.getElementById("tb3").value=n;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Power of Given Number</h1>
+        <p>Enter number <input type="text", id="tb1"></p>
+        <p>Enter power <input type="text", id="tb2"></p>
+        <p>Result <input type="text", id="tb3"></p>
+        <p><button type="submit" onclick="powFun()">Calculate</button></p>
+    </body>
+</html>

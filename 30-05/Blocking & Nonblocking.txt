@@ -1,0 +1,3 @@
+Blocking (synchronous) method executes step-by-step. Program is executed line by line, and waits until called function/operation returns.
+Nonblocking (asynchronous) method does not block execution of further operations. Program may not necessarily execute line by line, it does not wait for called function to return & moves on to next operation.
+JS library provides Promise class for implementing Asynchronous programming.

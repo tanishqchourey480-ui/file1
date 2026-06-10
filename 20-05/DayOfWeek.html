@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function dayNumFun(){
+                var dno;
+                dno=parseInt(document.getElementById("tb1").value);
+                switch(dno){
+                    case 1:
+                        document.getElementById("tb2").value="Monday";
+                        break;
+                    case 2:
+                        document.getElementById("tb2").value="Tuesday";
+                        break;
+                    case 3:
+                        document.getElementById("tb2").value="Wednesday";
+                        break;
+                    case 4:
+                        document.getElementById("tb2").value="Thursday";
+                        break;
+                    case 5:
+                        document.getElementById("tb2").value="Friday";
+                        break;
+                    case 6:
+                        document.getElementById("tb2").value="Saturday";
+                        break;
+                    case 7:
+                        document.getElementById("tb2").value="Sunday";
+                        break;
+                    default:
+                        document.getElementById("tb2").value="Invalid Input";
+                        break;
+                }
+                document.getElementById("tb2").value=b;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Day of week</h1>
+        <p>Enter day number <input type="text", id="tb1"></p>
+        <p>Result <input type="text", id="tb2"></p>
+        <p><button type="submit" onclick="dayNumFun()">Check</button></p>
+    </body>
+</html>

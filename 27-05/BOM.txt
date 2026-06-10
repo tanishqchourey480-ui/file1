@@ -1,0 +1,2 @@
+Browser Object Model allows JS to interact with browser window (instead of just HTML document like DOM/Document Object Model)
+JS uses an object to interact with BOM: window. All BOM objects & functions are in window.

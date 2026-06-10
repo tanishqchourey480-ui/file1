@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function jsonParseFun(){
+                let jsonString='{"ID":101,"Name":"Amit Jain","Age":30,"City":"Indore"}';
+                let jsObj=JSON.parse(jsonString);
+                document.write("ID: "+jsObj.ID+"<br>Name: "+jsObj.Name+"<br>Age: "+jsObj.Age+"<br>City: "+jsObj.City)
+            }
+        </script>
+    </head>
+    <body>
+        <h1>JSON.parse() demo</h1>
+        <p><button type="submit" onclick="jsonParseFun()">click</button></p>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function armstrongCheckFun(){
+                var a,b;
+                a=parseInt(prompt("Enter Number"))
+                b=((a%10)*(a%10)*(a%10))+((((a%100)-(a%10))/10)*(((a%100)-(a%10))/10)*(((a%100)-(a%10))/10))+((((a%1000)-(a%100))/100)*(((a%1000)-(a%100))/100)*(((a%1000)-(a%100))/100));
+                a==b?alert("Number is Armstrong."):alert("Number is not Armstrong.");
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Check Armstrong Number</h1>
+        <p><button type="submit" onclick="armstrongCheckFun()">Check Armstrong</button></p>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #div1{
+                background-color: lightgreen;
+                padding: 24px;
+                border: 1px solid black;
+            }
+            #div2{
+                background-color: yellow;
+                padding: 18px;
+                border: 1px solid black;
+            }
+            #div3{
+                background-color: orange;
+                border: 1px solid black;
+            }
+        </style>
+        <title>Window Object Demo</title>
+    </head>
+    <body>
+        <h1 style="color: green">IPS INDORE</h1>
+        <h3>Example Event Propagation: Bubbling & Capturing</h3>
+        <div id="div1">
+            Component 1
+            <div id="div2">
+                Component 2
+                <div id="div3">
+                    Component 3
+        </div></div></div>
+        <script>
+            let div1=document.querySelector("#div1");//querySelector is an inbuilt function of document Object like getElementById, used to find HTML element in DOM
+            let div2=document.querySelector("#div2");
+            let div3=document.querySelector("#div3");
+            //1. Bubbline (default event propagation):
+            div1.addEventListener("click", function (event) {
+                alert("Component 1 clicked.");
+            });
+            div2.addEventListener("click", function (event) {
+                alert("Component 2 clicked.");
+            });
+            div3.addEventListener("click", function (event) {
+                alert("Component 3 clicked.");
+            });
+            //2. Capturing:
+            //div1.addEventListener("click", function (event) {
+            //    alert("Component 1 clicked.");
+            //}, true);
+            //div2.addEventListener("click", function (event) {
+            //    alert("Component 2 clicked.");
+            //}, true);
+            //div3.addEventListener("click", function (event) {
+            //    alert("Component 3 clicked.");
+            //}, true);
+        </script>
+    </body>
+</html>

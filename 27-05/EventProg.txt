@@ -1,0 +1,10 @@
+Event programming is a technique where program execution depends on events (Mouse Click, Keyboard Press, Form Submit, Page Loading, Mouse Movement). In JS, it is mainly used to make pages interactive/dynamic. With help of event handlers, we can define custom events
+JS provides many ways to handle events:
+addEventListener(): most commonly used method to attach an event handler to an elemnent without overwriting existing event handlers. Syntax: elementname.addEventListener("eventname",function,propagationmode*optional*);
+*propagationmode- used to define execution order. capturing (parent to child)/bubbling (child to parent, default for all event handlers)
+removeEventListener(): used detach/remove an event handler from an elemnent without overwriting existing event handlers.
+
+
+
+
+HOMEWORK TASK: BASIC CALCULATOR (+-*/)  IN JS WITH LIVE INPUT/OUTPUT DISPLAY
